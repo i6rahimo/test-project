@@ -15,6 +15,11 @@
 .calculation__form {
     grid-template-areas: 'name email phone' 'file textarea textarea' 'btn . .';
 }
+@media screen and (max-width: 991px) {
+    .curtain {
+        z-index: -1;
+    }
+}
 
 .name  {
     grid-area: calculation-name;
