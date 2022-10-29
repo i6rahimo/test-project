@@ -1,13 +1,16 @@
 .form__link-wrapper {
     display: flex;
     position: relative;
+    max-width: 100%;
+    /* flex-wrap: wrap; */
 }
 .form__link-wrapper p {
-    top: -30px;
+    top: -50px;
     position: absolute;
+    word-break: break-all;
 }
 .calculation__caption {
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 .calculation__form {
     grid-template-areas: 'name email phone' 'file textarea textarea' 'btn . .';
@@ -30,4 +33,13 @@
 }
 .calculation__btn {
     grid-area: btn;
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        overflow: visible;
+    }
+    .curtain {
+        background: none;
+    }
 }
