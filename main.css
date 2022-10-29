@@ -1,0 +1,33 @@
+.form__link-wrapper {
+    display: flex;
+    position: relative;
+}
+.form__link-wrapper p {
+    top: -30px;
+    position: absolute;
+}
+.calculation__caption {
+    margin-bottom: 40px;
+}
+.calculation__form {
+    grid-template-areas: 'name email phone' 'file textarea textarea' 'btn . .';
+}
+
+.name  {
+    grid-area: calculation-name;
+}
+.calculation-email {
+    grid-area: calculation-email;
+}
+.calculation-tel {
+    grid-area: phone;
+}
+.file__item {
+    grid-area: file;
+}
+.form-textarea {
+    grid-area: textarea;
+}
+.calculation__btn {
+    grid-area: btn;
+}
